@@ -53,7 +53,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ texts }) => {
         transition={{ duration: 1 }}
         className="mt-6 text-lg leading-8 text-right"
       >
-        Our computer vision solutions offer advanced image and video analysis, including object detection, facial recognition, and visual data extraction, to boost your applications' capabilities.
+        Our computer vision solutions offer advanced image and video analysis, including object detection, facial recognition, and visual data extraction, to boost your application&apos;s capabilities.
       </motion.p>
     </div>
   );
