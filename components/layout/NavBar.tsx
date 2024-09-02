@@ -219,10 +219,10 @@ function Navbar({ className }: { className?: string }) {
                                 <div className="pl-4 space-y-2">
                                     <Link href="/expertise/data-collection-and-annotation" className="block text-white">● Data Collection & Annotation</Link>
                                     <Link href="/expertise/generative-ai" className="block text-white">● Generative AI</Link>
-                                    <Link href="/seo" className="block text-white">● Computer Vision</Link>
-                                    <Link href="/seo" className="block text-white">● NLP</Link>
-                                    <Link href="/seo" className="block text-white">● Data Analytics</Link>
-                                    <Link href="/expertise/ai-based-web-development" className="block text-white">● UI/UX Design</Link>
+                                    <Link href="/expertise/computer-vision" className="block text-white">● Computer Vision</Link>
+                                    <Link href="/expertise/nlp" className="block text-white">● NLP</Link>
+                                    <Link href="/expertise/data-analytics" className="block text-white">● Data Analytics</Link>
+                                    <Link href="/expertise/ui-ux" className="block text-white">● UI/UX Design</Link>
                                     <Link href="/expertise/ai-based-app-development" className="block text-white">● AI Based Web & App Development</Link>
                                     <Link href="/expertise/devops-mlops" className="block text-white">● DevOps & MLOps</Link>
                                 </div>
