@@ -139,7 +139,7 @@ as planned.
                     <AccordionItem value="item-5">
                       <AccordionTrigger className='text-left lg:p-4 md:p-4 font-sans font-bold text-lg'>Testing and Validation</AccordionTrigger>
                       <AccordionContent className='lg:ml-4 md:ml-4 font-sans text-lg'>
-                        ● Conduct rigorous testing to ensure the app's
+                        ● Conduct rigorous testing to ensure the app&apos;s
 functionality, accuracy, and user experience meet the definedrequirements. This includes performance, security, and usability
 testing
                       </AccordionContent>
