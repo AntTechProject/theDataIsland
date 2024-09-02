@@ -1,0 +1,299 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border !scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  button {
+    @apply active:outline-none;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+
+  .black-gradient {
+    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
+  }
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-right: 0 rem;
+
+}
+
+.logo {
+  display: block;
+  height: 3rem; /* Adjust as needed */
+}
+
+.logo-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #E2CBFF, #393BB2); /* Gradient colors */
+  -webkit-mask: url(/thedataisland.png) center/contain no-repeat;
+  mask: url(/thedataisland.png) center/contain no-repeat;
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  z-index: 1;
+}
+.gradient-outline {
+  background: linear-gradient(to right, #E2CBFF, #393BB2); /* Your gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold; /* Optional: Make the outline stand out more */
+}
+
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    rgb(152, 36, 230) 0%,
+    #4a3c8c 50%,
+    #00ffc8 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari and older versions of Chrome */
+  -webkit-text-fill-color: transparent; /* Make text color transparent to show gradient */
+  transform: scale(1); /* Apply scaling */
+}
+
+/* .gradient-border {
+  border: 4px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: 
+    linear-gradient(to right, var(--tw-gradient-stops)), 
+    linear-gradient(to right, blue, red);
+} */
+
+/* globals.css or in your Tailwind CSS configuration */
+
+/* Gradient Text 1 */
+
+
+
+/* Ocean Breeze Gradient */
+.gradient-text-2 {
+  background: linear-gradient(90deg, #00C9FF, #92FE9D);
+  -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+/* Pink and Blue Gradient */
+.gradient-text-3 {
+  background: linear-gradient(90deg, #FF0080, #FF8C00);
+  -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+/* Gradient Text 1: Sunset Glow */
+
+/* Gradient Text 2: Ocean Breeze */
+.gradient-text-violet {
+  background: linear-gradient(90deg, #7F00FF, #E100FF); /* Violet shades */
+  -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+
+/* Gradient Text 4: Neon Lights */
+.gradient-text-neon {
+  background: linear-gradient(90deg, #FF0099, #493240);
+   -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+/* Gradient Text 5: Aqua Marine */
+.gradient-text-aqua {
+  background: linear-gradient(90deg, #00F260, #0575E6);
+   -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+/* Gradient Text 7: Lime Twist */
+.gradient-text-lime {
+  background: linear-gradient(90deg, #E2E2E2, #5B86E5);
+   -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+/* Gradient Text 8: Sunset Boulevard */
+/* Gradient Text 15: Blue to Purple */
+.gradient-text-blue-purple {
+  background: linear-gradient(90deg, #00A8E8, #8E2DE2); /* Blue to Purple */
+  -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+/* Gradient Text 16: Light Blue to Deep Purple */
+.gradient-text-light-blue-purple {
+  background: linear-gradient(90deg, #ADD8E6, #4A00E0); /* Light Blue to Deep Purple */
+  -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+
+/* Gradient Text 12: Golden Dawn */
+.gradient-text-golden {
+  background: linear-gradient(90deg, #FFD700, #FF8C00); /* Golden shades */
+  -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+/* Gradient Text 13: Purple Haze */
+.gradient-text-purple {
+  background: linear-gradient(90deg, #8E2DE2, #4A00E0); /* Purple shades */
+  -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+/* Gradient Text 14: Coral Reef */
+.gradient-text-coral {
+  background: linear-gradient(90deg, #FF6F61, #FFB6B9); /* Coral shades */
+  -webkit-background-clip: text; /* For Chrome, Safari, and Opera */
+  -moz-background-clip: text;    /* For older versions of Firefox */
+  -ms-background-clip: text;     /* For Internet Explorer */
+  background-clip: text;         /* Standard property */
+  -webkit-text-fill-color: transparent; /* For Chrome, Safari, and Opera */
+  -moz-text-fill-color: transparent;    /* For older versions of Firefox */
+}
+
+
+
+.animated-gradient {
+  background: linear-gradient(90deg, #3b82f6,#8b5cf6, #ef4444,  #6366f1);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 4s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* global.css */
