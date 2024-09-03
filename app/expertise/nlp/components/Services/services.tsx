@@ -29,8 +29,8 @@ const NLPServices: React.FC = () => {
 
       {/* Main Content */}
       <CardContainer className="relative py-8 px-4 sm:px-6 lg:px-8 bg-transparent">
-        <CardBody className="w-full max-w-7xl mx-auto relative bg-black/[0.6] border border-gray-900 rounded-2xl p-4 sm:p-6 lg:p-8 overflow-hidden">
-          <CardItem translateZ={50} className="text-xl sm:pl-9 font-bold text-center text-gray-900 dark:text-white mb-6">
+        <CardBody className="w-full max-w-7xl mx-auto relative bg-black/[0.6] border border-gray-900 rounded-2xl p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center">
+          <CardItem translateZ={50} className="text-lg sm:text-xl lg:text-2xl font-bold text-center text-gray-900 dark:text-white mb-4 sm:mb-6 px-4 sm:px-6 lg:px-8">
             Our NLP Services
           </CardItem>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
