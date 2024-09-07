@@ -34,7 +34,7 @@ const Hero = () => {
       <div className='relative my-20 z-10'>
         <div className=''>
           <AnimatedTitle />
-          <div className="flex justify-end -mt-3">
+          <div className="flex justify-endmt-2">
             <div className="max-w-2xl lg:text-center">
               <AnimatedText texts={texts} />
             </div>
